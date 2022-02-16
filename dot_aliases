@@ -46,3 +46,5 @@ alias timestamp='date +%s'
 # Sourcetree
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
+# Git
+alias gittidy="git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d"
