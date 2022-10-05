@@ -48,3 +48,6 @@ alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 # Git
 alias gittidy="git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d"
+
+# Terraform
+alias tfdocs="terraform-docs markdown table --output-file README.md --output-mode inject ."
