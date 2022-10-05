@@ -15,3 +15,6 @@ if [ -f '/Users/adam/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/adam
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
+
+# GRC Colouring
+if [ -f '/Users/adam/google-cloud-sdk/path.zsh.inc' ]; then . "`brew --prefix`/etc/grc.zsh"; fi
