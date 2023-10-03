@@ -51,3 +51,6 @@ alias gittidy="git branch --merged main | grep -v '^[ *]*main$' | xargs git bran
 
 # Terraform
 alias tfdocs="terraform-docs markdown table --output-file README.md --output-mode inject ."
+
+# Tailscale
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
